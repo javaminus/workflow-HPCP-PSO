@@ -1,0 +1,141 @@
+{
+  "vmTypes": [
+    {
+      "id": 0,
+      "name": "t2.small",
+      "cpu": 1.0,
+      "memory": 2048,
+      "storage": 20,
+      "ioType": "low",
+      "networkSpeed": 20971520,
+      "speed": 1.0,
+      "pricing": {
+        "preReserved": 0.08,
+        "onDemand": 0.12,
+        "spot": 0.04
+      }
+    },
+    {
+      "id": 1,
+      "name": "t2.medium",
+      "cpu": 2.0,
+      "memory": 4096,
+      "storage": 40,
+      "ioType": "medium",
+      "networkSpeed": 20971520,
+      "speed": 1.5,
+      "pricing": {
+        "preReserved": 0.13,
+        "onDemand": 0.195,
+        "spot": 0.065
+      }
+    },
+    {
+      "id": 2,
+      "name": "c5.large",
+      "cpu": 2.0,
+      "memory": 4096,
+      "storage": 50,
+      "ioType": "medium",
+      "networkSpeed": 20971520,
+      "speed": 2.0,
+      "pricing": {
+        "preReserved": 0.19,
+        "onDemand": 0.28,
+        "spot": 0.09
+      }
+    },
+    {
+      "id": 3,
+      "name": "c5.xlarge",
+      "cpu": 4.0,
+      "memory": 8192,
+      "storage": 100,
+      "ioType": "high",
+      "networkSpeed": 20971520,
+      "speed": 2.5,
+      "pricing": {
+        "preReserved": 0.25,
+        "onDemand": 0.375,
+        "spot": 0.125
+      }
+    },
+    {
+      "id": 4,
+      "name": "c5.2xlarge",
+      "cpu": 8.0,
+      "memory": 16384,
+      "storage": 200,
+      "ioType": "high",
+      "networkSpeed": 20971520,
+      "speed": 3.0,
+      "pricing": {
+        "preReserved": 0.32,
+        "onDemand": 0.48,
+        "spot": 0.16
+      }
+    },
+    {
+      "id": 5,
+      "name": "r5.large",
+      "cpu": 2.0,
+      "memory": 16384,
+      "storage": 50,
+      "ioType": "medium",
+      "networkSpeed": 20971520,
+      "speed": 3.5,
+      "pricing": {
+        "preReserved": 0.40,
+        "onDemand": 0.595,
+        "spot": 0.20
+      }
+    },
+    {
+      "id": 6,
+      "name": "r5.xlarge",
+      "cpu": 4.0,
+      "memory": 32768,
+      "storage": 100,
+      "ioType": "high",
+      "networkSpeed": 20971520,
+      "speed": 4.0,
+      "pricing": {
+        "preReserved": 0.48,
+        "onDemand": 0.72,
+        "spot": 0.24
+      }
+    },
+    {
+      "id": 7,
+      "name": "i3.large",
+      "cpu": 2.0,
+      "memory": 15360,
+      "storage": 475,
+      "ioType": "nvme",
+      "networkSpeed": 20971520,
+      "speed": 4.5,
+      "pricing": {
+        "preReserved": 0.57,
+        "onDemand": 0.855,
+        "spot": 0.285
+      }
+    },
+    {
+      "id": 8,
+      "name": "i3.xlarge",
+      "cpu": 4.0,
+      "memory": 30720,
+      "storage": 950,
+      "ioType": "nvme",
+      "networkSpeed": 20971520,
+      "speed": 5.0,
+      "pricing": {
+        "preReserved": 0.67,
+        "onDemand": 1.0,
+        "spot": 0.33
+      }
+    }
+  ],
+  "billingInterval": 3600,
+  "egressPricePerGB": 0.09
+}

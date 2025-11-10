@@ -1,0 +1,95 @@
+{
+  "affinityScores": {
+    "CPU": {
+      "t2.small": 0.5,
+      "t2.medium": 0.6,
+      "c5.large": 0.85,
+      "c5.xlarge": 0.95,
+      "c5.2xlarge": 1.0,
+      "r5.large": 0.6,
+      "r5.xlarge": 0.7,
+      "i3.large": 0.7,
+      "i3.xlarge": 0.8
+    },
+    "MEM": {
+      "t2.small": 0.4,
+      "t2.medium": 0.5,
+      "c5.large": 0.5,
+      "c5.xlarge": 0.6,
+      "c5.2xlarge": 0.7,
+      "r5.large": 0.95,
+      "r5.xlarge": 1.0,
+      "i3.large": 0.8,
+      "i3.xlarge": 0.85
+    },
+    "IO": {
+      "t2.small": 0.3,
+      "t2.medium": 0.4,
+      "c5.large": 0.5,
+      "c5.xlarge": 0.6,
+      "c5.2xlarge": 0.7,
+      "r5.large": 0.5,
+      "r5.xlarge": 0.6,
+      "i3.large": 0.95,
+      "i3.xlarge": 1.0
+    },
+    "NET": {
+      "t2.small": 0.5,
+      "t2.medium": 0.6,
+      "c5.large": 0.75,
+      "c5.xlarge": 0.85,
+      "c5.2xlarge": 0.9,
+      "r5.large": 0.8,
+      "r5.xlarge": 0.85,
+      "i3.large": 0.7,
+      "i3.xlarge": 0.75
+    },
+    "GPU": {
+      "t2.small": 0.0,
+      "t2.medium": 0.0,
+      "c5.large": 0.0,
+      "c5.xlarge": 0.0,
+      "c5.2xlarge": 0.0,
+      "r5.large": 0.0,
+      "r5.xlarge": 0.0,
+      "i3.large": 0.0,
+      "i3.xlarge": 0.0
+    },
+    "MIX": {
+      "t2.small": 0.6,
+      "t2.medium": 0.7,
+      "c5.large": 0.75,
+      "c5.xlarge": 0.8,
+      "c5.2xlarge": 0.85,
+      "r5.large": 0.8,
+      "r5.xlarge": 0.85,
+      "i3.large": 0.8,
+      "i3.xlarge": 0.85
+    }
+  },
+  "taskTypeRules": {
+    "CPU": {
+      "cpuIntensityThreshold": 0.7,
+      "description": "High CPU usage, low I/O"
+    },
+    "MEM": {
+      "memoryIntensityThreshold": 0.7,
+      "description": "High memory usage"
+    },
+    "IO": {
+      "ioIntensityThreshold": 0.6,
+      "description": "High I/O operations"
+    },
+    "NET": {
+      "networkIntensityThreshold": 0.6,
+      "description": "High network data transfer"
+    },
+    "GPU": {
+      "gpuRequired": true,
+      "description": "Requires GPU acceleration"
+    },
+    "MIX": {
+      "description": "Mixed workload characteristics"
+    }
+  }
+}
