@@ -163,6 +163,10 @@ Tune RBDAS behavior by editing configuration files:
 - Beta (affinity): 10.0
 - Gamma (fragmentation): 5.0
 
+### Experiment Runner
+
+The repository includes a self-contained experiment runner that compares RBDAS against baseline algorithms (HEFT, PSO, Cost-Greedy, No-Affinity) across multiple workflow types. The runner simulates task execution with spot interruptions, checkpointing, and generates comprehensive performance metrics in Chinese. To run the experiments: compile the project with `mvn -q -DskipTests compile`, then execute `java -cp target/classes com.javaminus.workflow.rbdas.Main [--seed <number>] [--trials <number>]`. Results are displayed as a Chinese summary report in the console and saved as timestamped CSV files in the `results/` directory. The default configuration runs 5 trials per algorithm with a random seed of 42 for reproducibility. For more details, see the source file `src/com/javaminus/workflow/rbdas/Main.java`.
+
 ### License
 
 See LICENSE file for details.
