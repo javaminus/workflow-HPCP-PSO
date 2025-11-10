@@ -1,0 +1,48 @@
+{
+  "description": "Affinity mapping between workflow types and VM families",
+  "version": "1.0",
+  "mappings": {
+    "CPU": {
+      "compute_optimized": 0.9,
+      "general_purpose": 0.6,
+      "memory_optimized": 0.3,
+      "gpu_accelerated": 0.2,
+      "io_optimized": 0.3
+    },
+    "IO": {
+      "compute_optimized": 0.3,
+      "general_purpose": 0.5,
+      "memory_optimized": 0.4,
+      "gpu_accelerated": 0.2,
+      "io_optimized": 0.9
+    },
+    "MEM": {
+      "compute_optimized": 0.3,
+      "general_purpose": 0.6,
+      "memory_optimized": 0.9,
+      "gpu_accelerated": 0.4,
+      "io_optimized": 0.4
+    },
+    "NET": {
+      "compute_optimized": 0.4,
+      "general_purpose": 0.7,
+      "memory_optimized": 0.5,
+      "gpu_accelerated": 0.3,
+      "io_optimized": 0.6
+    },
+    "GPU": {
+      "compute_optimized": 0.2,
+      "general_purpose": 0.3,
+      "memory_optimized": 0.3,
+      "gpu_accelerated": 1.0,
+      "io_optimized": 0.2
+    },
+    "MIX": {
+      "compute_optimized": 0.6,
+      "general_purpose": 0.8,
+      "memory_optimized": 0.6,
+      "gpu_accelerated": 0.5,
+      "io_optimized": 0.5
+    }
+  }
+}

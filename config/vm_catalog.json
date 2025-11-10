@@ -1,0 +1,151 @@
+{
+  "description": "VM catalog with types, capabilities, and pricing models",
+  "version": "1.0",
+  "vm_types": [
+    {
+      "id": "c5.large",
+      "family": "compute_optimized",
+      "vcpus": 2,
+      "memory_gb": 4,
+      "storage_gb": 50,
+      "network_gbps": 0.75,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.085,
+        "reserved": 0.051,
+        "spot": 0.034
+      }
+    },
+    {
+      "id": "c5.xlarge",
+      "family": "compute_optimized",
+      "vcpus": 4,
+      "memory_gb": 8,
+      "storage_gb": 100,
+      "network_gbps": 1.25,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.17,
+        "reserved": 0.102,
+        "spot": 0.068
+      }
+    },
+    {
+      "id": "m5.large",
+      "family": "general_purpose",
+      "vcpus": 2,
+      "memory_gb": 8,
+      "storage_gb": 50,
+      "network_gbps": 0.75,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.096,
+        "reserved": 0.058,
+        "spot": 0.038
+      }
+    },
+    {
+      "id": "m5.xlarge",
+      "family": "general_purpose",
+      "vcpus": 4,
+      "memory_gb": 16,
+      "storage_gb": 100,
+      "network_gbps": 1.25,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.192,
+        "reserved": 0.115,
+        "spot": 0.077
+      }
+    },
+    {
+      "id": "r5.large",
+      "family": "memory_optimized",
+      "vcpus": 2,
+      "memory_gb": 16,
+      "storage_gb": 50,
+      "network_gbps": 0.75,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.126,
+        "reserved": 0.076,
+        "spot": 0.050
+      }
+    },
+    {
+      "id": "r5.xlarge",
+      "family": "memory_optimized",
+      "vcpus": 4,
+      "memory_gb": 32,
+      "storage_gb": 100,
+      "network_gbps": 1.25,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.252,
+        "reserved": 0.151,
+        "spot": 0.101
+      }
+    },
+    {
+      "id": "i3.large",
+      "family": "io_optimized",
+      "vcpus": 2,
+      "memory_gb": 15.25,
+      "storage_gb": 475,
+      "network_gbps": 0.75,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.156,
+        "reserved": 0.094,
+        "spot": 0.062
+      }
+    },
+    {
+      "id": "i3.xlarge",
+      "family": "io_optimized",
+      "vcpus": 4,
+      "memory_gb": 30.5,
+      "storage_gb": 950,
+      "network_gbps": 1.25,
+      "gpu": false,
+      "pricing": {
+        "on_demand": 0.312,
+        "reserved": 0.187,
+        "spot": 0.125
+      }
+    },
+    {
+      "id": "p3.2xlarge",
+      "family": "gpu_accelerated",
+      "vcpus": 8,
+      "memory_gb": 61,
+      "storage_gb": 100,
+      "network_gbps": 2.5,
+      "gpu": true,
+      "pricing": {
+        "on_demand": 3.06,
+        "reserved": 1.836,
+        "spot": 1.224
+      }
+    },
+    {
+      "id": "p3.8xlarge",
+      "family": "gpu_accelerated",
+      "vcpus": 32,
+      "memory_gb": 244,
+      "storage_gb": 200,
+      "network_gbps": 10.0,
+      "gpu": true,
+      "pricing": {
+        "on_demand": 12.24,
+        "reserved": 7.344,
+        "spot": 4.896
+      }
+    }
+  ],
+  "egress_pricing": {
+    "within_region_gb": 0.01,
+    "cross_region_gb": 0.02,
+    "internet_gb": 0.09
+  }
+}
